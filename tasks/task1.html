@@ -7,6 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    Validation
+    <header>
+        <p>Forms &amp; Validation — Assignment 4</p>
+        <nav aria-label="Tasks">
+            <a href="index.html">Home</a>
+            <a href="html5-validation.html" aria-current="page">Task 1</a>
+            <a href="tailwind-form.html">Task 2</a>
+            <a href="tailwind-validation.html">Task 3</a>
+            <a href="registration.html">Task 4</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Task 1: HTML5 validation</h1>
+        <p>Required fields are checked by your browser.</p>
+        <form data-mode="native">
+            <p>
+                <label for="name">Name</label><br>
+                <input id="name" name="name" type="text" required maxlength="80" autocomplete="name">
+            </p>
+            <p>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" type="email" required autocomplete="email">
+            </p>
+            <p>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" required maxlength="1000"></textarea>
+            </p>
+            <button type="submit">Send message</button>
+            <p data-status role="status"></p>
+        </form>
+    </main>
+    <footer>
+        <p>Satimov Damir · SE-2525 · Assignment 4</p>
+    </footer>
 </body>
 </html>
