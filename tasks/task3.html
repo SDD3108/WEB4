@@ -18,10 +18,10 @@
             <a href="index.html" class="font-semibold tracking-tight">Forms &amp; Validation</a>
             <nav aria-label="Tasks" class="flex flex-wrap gap-1">
                 <a href="index.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 0</a>
-                <a href="html5-validation.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 1</a>
-                <a href="tailwind-form.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 2</a>
-                <a href="tailwind-validation.html" class="rounded-md bg-blue-50 px-3 py-2 text-sm font-medium text-blue-700" aria-current="page">Task 3</a>
-                <a href="registration.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 4</a>
+                <a href="task1.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 1</a>
+                <a href="task2.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 2</a>
+                <a href="task3.html" class="rounded-md bg-blue-50 px-3 py-2 text-sm font-medium text-blue-700" aria-current="page">Task 3</a>
+                <a href="task4.html" class="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100">Task 4</a>
             </nav>
         </div>
     </header>
@@ -30,7 +30,7 @@
         <h1 class="text-3xl font-bold tracking-tight text-slate-900">Form validation</h1>
         <p class="mt-3 text-sm leading-6 text-slate-600">Complete the form to see feedback for each field</p>
         <section aria-label="Form validation" class="mt-7 rounded-xl border border-slate-200 bg-white p-5 sm:p-8">
-            <p class="mb-6 text-sm text-slate-500">All fields are required.</p>
+            <p class="mb-6 text-sm text-slate-500">All fields are required</p>
             <form data-mode="feedback" novalidate>
                 <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
                     <div>
@@ -40,7 +40,7 @@
                     </div>
                     <div>
                         <label for="email" class="text-sm font-medium text-slate-700">Email</label>
-                        <input id="email" name="email" type="email" class="mt-2 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-slate-900 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100" aria-describedby="email-feedback" required autocomplete="email" placeholder="you@example.com">
+                        <input id="email" name="email" type="email" class="mt-2 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-slate-900 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100" aria-describedby="email-feedback" required autocomplete="email" placeholder="you@gmail.com">
                         <p id="email-feedback" class="mt-1 text-sm" aria-live="polite"></p>
                     </div>
                     <div class="sm:col-span-2">
@@ -48,7 +48,7 @@
                         <textarea id="message" name="message" rows="5" class="mt-2 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-slate-900 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100" aria-describedby="message-feedback" required maxlength="1000" placeholder="How can we help?"></textarea>
                         <p id="message-feedback" class="mt-1 text-sm" aria-live="polite"></p>
                     </div>
-                    <p class="-mt-3 text-xs text-slate-500 sm:col-span-2">Please keep your message under 1,000 characters.</p>
+                    <p class="-mt-3 text-xs text-slate-500 sm:col-span-2">Please keep your message under 1,000 characters</p>
                 </div>
                 <div class="mt-7 flex flex-wrap gap-3">
                     <button type="submit" class="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Send message</button>
@@ -56,7 +56,6 @@
                 <p data-status role="status" class="mt-5 text-sm font-medium text-green-700"></p>
             </form>
         </section>
-        <p class="mt-4 text-center text-xs text-slate-500">Demo form. Your data is not sent or saved.</p>
     </main>
     <footer class="mx-auto max-w-4xl px-5 pb-6 text-center text-xs text-slate-500">
         <p>Satimov Damir · SE-2525 · Assignment 4</p>
