@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/forms.js" defer></script>
     <style type="text/tailwindcss">
         @theme {
             --color-clifford: #da373d;
@@ -12,6 +13,38 @@
     <title>Document</title>
 </head>
 <body>
-    home
+    <header>
+        <p>Forms &amp; Validation — Assignment 4</p>
+        <nav aria-label="Tasks">
+            <a href="index.html" aria-current="page">Task 0</a>
+            <a href="html5-validation.html">Task 1</a>
+            <a href="tailwind-form.html">Task 2</a>
+            <a href="tailwind-validation.html">Task 3</a> 
+            <a href="registration.html">Task 4</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Main Page</h1>
+        <p>Send us a message using the form below.</p>
+        <form data-mode="native">
+            <p>
+                <label for="name">Name</label><br>
+                <input id="name" name="name" type="text"  autocomplete="name">
+            </p>
+            <p>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" type="email" autocomplete="email">
+            </p>
+            <p>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" ></textarea>
+            </p>
+            <button type="submit">Send message</button>
+            <p data-status role="status"></p>
+        </form>
+    </main>
+    <footer>
+        <p>Satimov Damir · SE-2525 · Assignment 4</p>
+    </footer>
 </body>
 </html>
