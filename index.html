@@ -27,18 +27,18 @@
         <h1>Main Page</h1>
         <p>Send us a message using the form below</p>
         <form data-mode="native">
-            <p>
+            <div>
                 <label for="name">Name</label><br>
-                <input id="name" name="name" type="text"  autocomplete="name">
-            </p>
-            <p>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="write ur name">
+            </div>
+            <div>
                 <label for="email">Email</label><br>
-                <input id="email" name="email" type="email" autocomplete="email">
-            </p>
-            <p>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="write ur email">
+            </div>
+            <div>
                 <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="5" ></textarea>
-            </p>
+                <textarea id="message" name="message" rows="3" placeholder="write ur message"></textarea>
+            </div>
             <button type="submit">Send message</button>
             <p data-status role="status"></p>
         </form>

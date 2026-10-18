@@ -6,6 +6,7 @@ const password = form.querySelector("#password")
 const confirmation = form.querySelector("#confirm-password")
 let submitted = false
 
+// проверка инпута/поля ввода
 const checkField = (field)=>{
     field.setCustomValidity("");
     if(field.required && field.type !== "radio" && !field.value.trim()){
@@ -16,6 +17,7 @@ const checkField = (field)=>{
     }
     return field.validity.valid;
 }
+// короче отладка ошибок
 const getError = (field)=>{
     if(field.type == "radio"){
         return "Please select your gender"
@@ -37,6 +39,7 @@ const getError = (field)=>{
     }
     return "Please check this field"
 }
+// feedback
 const showFeedback = (field)=>{
     const valid = checkField(field)
     const feedback = document.getElementById(field.type == "radio" ? "gender-feedback" : field.id + "-feedback")
@@ -55,6 +58,7 @@ const showFeedback = (field)=>{
     feedback.classList.toggle("text-red-600", !valid)
     return valid
 }
+// task 3
 form.addEventListener("submit",(event)=>{
     event.preventDefault()
     statusMessage.textContent = ""
@@ -67,8 +71,9 @@ form.addEventListener("submit",(event)=>{
             return
         }
     }
-    statusMessage.textContent = password ? "Registration completed successfully!" : "Your message passed validation! This is a demo; no message was sent"
+    statusMessage.textContent = password ? "Registration completed successfully" : "Ur message sent successfully"
 });
+// task 4
 fields.forEach((field) => {
     field.addEventListener("input",()=>{
         statusMessage.textContent = ""
@@ -92,6 +97,7 @@ fields.forEach((field) => {
         }
     });
 });
+// task 4
 form.addEventListener("reset",() => {
     submitted = false
     statusMessage.textContent = ""
