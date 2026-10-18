@@ -3,11 +3,11 @@ Assignment 4 for Web Technologies
 Student: Satimov Damir  
 Group: SE-2525
 
-A five-page form project made with HTML, Tailwind CSS and JavaScript Task 0 and Task 1 use plain HTML without CSS Tasks 2–4 use Tailwind CSS through the browser CDN in place of Bootstrap
+A five-page form project made with HTML, Tailwind CSS and JavaScript Home and Task 1 use plain HTML without CSS Tasks 2–4 use Tailwind CSS through the browser CDN in place of Bootstrap
 
 ## Pages
 
-- `indexhtml` — Task 0: basic contact form
+- `indexhtml` — Home: basic contact form
 - `html5-validationhtml` — Task 1: built-in HTML5 validation
 - `tailwind-formhtml` — Task 2: responsive contact form with Tailwind
 - `tailwind-validationhtml` — Task 3: valid and invalid feedback
