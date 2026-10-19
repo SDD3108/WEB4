@@ -42,8 +42,8 @@ const getError = (field)=>{
 // feedback
 const showFeedback = (field)=>{
     const valid = checkField(field)
-    const feedback = document.getElementById(field.type == "radio" ? "gender-feedback" : field.id + "-feedback")
-    const group = field.type == "radio" ? fields.filter((item)=> {item.name == field.name}) : [field]
+    const feedback = document.getElementById(field.type == "radio" ? "gender-feedback" : `${field.id}-feedback`)
+    const group = field.type == "radio" ? fields.filter((item)=> item.name == field.name) : [field]
 
     group.forEach((item)=>{
         item.setAttribute("aria-invalid", String(!valid));
